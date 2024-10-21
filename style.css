@@ -1,0 +1,173 @@
+* {border-sizing:border-box;
+    margin: 0;
+   font-family: Helvetica, Charcoal, sans-serif;
+ 
+ }
+ header{font-size:1.5rem;
+        text-align: center;}
+ .thed {
+ color: white;}
+ 
+   .container{display: block;
+              width: 90%;
+              padding: 0 1em;} 
+ 
+   .menu1{position: sticky;
+       display:inline-block;
+     padding: 1rem 1rem;
+    /*  border: 2px black solid; */
+     border-radius: 30px;
+     color: white;
+     background:rgba(100, 30, 22, 0.5);
+         top:2px;}
+ 
+ 
+   .link {
+   height: 100%;
+   width: 0;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0, 0.9);
+   overflow-x: hidden;
+   transition: 0.5s;
+ }
+ 
+   .ref {
+   position: relative;
+   top: 10%;
+   width: 100%;
+   text-align: center;
+   margin-top: 5px;
+ }
+ 
+   .thed,.link a {
+   padding: 8px;
+   text-decoration: none;
+   font-size: 18px;
+   color: #818181;
+   display: block;
+   transition: 0.3s;
+ }
+ 
+   .link a:hover, .link a:focus {
+   color: #f1f1f1;
+ }
+ 
+   /* .link {
+   position: sticky;
+   width:100%;
+   top: 0px;
+   right: 35px;
+   font-size: 30px; */
+ 
+   .closebtn {
+   position: absolute;
+   top: 2px;
+   right: 15px;
+   font-size: 40px;
+ }
+ code {
+   display: block;
+   text-align: right;
+   white-space: pre;
+   position: relative;
+   word-break: normal;
+   word-wrap: normal;
+   line-height: 2;
+   background-color: #f7f7f7;
+   padding: 10px;
+   margin: 10px;
+   border-radius: 5px;
+ }
+ 
+  
+ /* CSS for links------ */
+ a:link {
+   text-decoration: none;
+ }
+ 
+ a:visited {
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   text-decoration: underline;
+ }
+ 
+ a:active {
+   text-decoration: underline;
+ }
+  /* unvisited link */
+ a:link {
+   color: green;
+ }
+ 
+ /* visited link */
+ a:visited {
+   color: green;
+ }
+ 
+ /* mouse over link */
+ a:hover {
+   color: hotpink;
+ }
+ 
+ /* selected link */
+ a:active {
+   color: blue;
+ } 
+ .quiza {display: block;
+   border: 2px;
+   padding: 1em;
+   text-align: center;
+   border-radius: 10px;
+     color: white;
+     background:rgba(100, 30, 22, 0.5);
+ 
+ }
+ /* for large screen */
+ 
+      
+   
+ @media (min-width: 500px) {
+   
+   .menu1{display:none;}
+   .link a{display:none;}
+   .container {
+     width: 100%;
+     display: grid;
+     grid-template: 100% / 1fr 4fr;
+     padding: 0;
+ }
+ .link {border: 1px black solid;
+        text-align: center;
+        height: 100vh;
+         width:100%;
+         display: block;
+        overflow:auto;
+        position: sticky;
+        top:0;
+         background-color:white;}
+  
+   
+ .note {border: 2px grey solid;
+        padding: 1em 1em;}
+ 
+ .thed,
+ .ref a {display:block;
+         padding: 1rem 1rem;
+         border-bottom: 1px black solid;
+         color:black;}
+ 
+ .thed{position: sticky;
+       top:0;
+       background: white;
+       margin-top: 0;
+       text-align: center;
+       padding: 0 1rem;
+       }  
+ 
+ }
